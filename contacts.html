@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uta.Manufacture | About</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
+    <!-- <link rel="stylesheet" href="./js/j    InvertScroll-master/dist/css/jInvertScroll.css"> -->
+</head>
+
+<body>
+    <section class="main">
+        <div class="sidebar">
+            <img src="./img/header/logo.svg" alt="uta manufacture" class="logo">
+            <ul>
+                <li><a href='./home.html'>home</a></li>
+                <li><a href='./works.html'>works</a></li>
+                <!-- <li><a href='./sketches.html'>sketches</a></li> -->
+                <li><a href='./skills.html'>skills</a></li>
+                <li><a href='./about.html'>about</a></li>
+                <li><a class="active" href='./contacts.html'>contacts</a></li>
+            </ul>
+        </div>
+        <div class="mainbar mainbar-contacts">
+            <ul class="contact-links">
+                <li><img src="./img/noun_message_2095560.svg" alt="uta manufacture email" class="contact-icon email-i"></span>uta.manufacture@gmail.com</li>
+                <li><img src="./img/noun_Camera_2372541.svg" alt="uta manufacture instagram" class="contact-icon insta-i"></span><a href="https://www.instagram.com/humla._/">instagram</a></li>
+                <li><img src="./img/noun_send_1267821.svg" alt="uta manufacture telegram" class="contact-icon telegram-i"></span><a href="http://t.me/uta_manufacture">telegram</a></li>
+                <li><img src="./img/noun_webcam_644546.svg" alt="uta manufacture skype" class="contact-icon skype-i"></span><a href="skype:live:uta.manufacture?userinfo">skype</a></li><a href=""></a>
+            </ul>
+        </div>
+        <script type='text/javascript'
+            src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+        <script src="./js/scrollHor.js"></script>
+        <script>
+            $(function () {
+                $(".scroll").mousewheel(function (event, delta) {
+                    this.scrollLeft -= (delta * 50);
+                    event.preventDefault();
+                });
+            });
+        </script>
+        <script src="./js/scrollPicturesEvents.js"></script>
+    </section>
+</body>
+
+</html>

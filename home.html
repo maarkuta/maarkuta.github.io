@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uta.Manufacture | Home</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="sidebar">
+            <img src="./img/header/logo.svg" alt="uta manufacture" class="logo">
+            <ul>
+                <li><a class="active" href='./home.html'>home</a></li>
+                <li><a href='./works.html'>works</a></li>
+                <li><a href='./skills.html'>skills</a></li>
+                <li><a href='./about.html'>about</a></li>
+                <li><a href='./contacts.html'>contacts</a></li>
+            </ul>
+        </div>
+        <div class="mainbar">
+            <div class="mb-title home-first-title">
+                <h1>Дизайн</h1>
+            </div>
+            <div class="home-second-title">
+                <p>сегодняшнего</p>
+                <h1>дня!</h1>
+            </div>
+        </div>
+        <script type='text/javascript'
+            src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+        <script src="./js/scrollHor.js"></script>
+        <script>
+            $(function () {
+                $(".scroll").mousewheel(function (event, delta) {
+                    this.scrollLeft -= (delta * 50);
+                    event.preventDefault();
+                });
+            });
+        </script>
+        <script src="./js/scrollPicturesEvents.js"></script>
+    </section>
+</body>
+
+</html>

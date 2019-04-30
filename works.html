@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uta.Manufacture</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
+    <!-- <link rel="stylesheet" href="./js/j    InvertScroll-master/dist/css/jInvertScroll.css"> -->
+</head>
+
+<body>
+    <section class="main">
+        <div class="sidebar">
+            <img src="./img/header/logo.svg" alt="uta manufacture" class="logo">
+            <ul>
+                <li><a href='./home.html'>home</a></li>
+                <li><a class="active" href='./works.html'>works</a></li>
+                <!-- <li><a href='./sketches.html'>sketches</a></li> -->
+                <li><a href='./skills.html'>skills</a></li>
+                <li><a href='./about.html'>about</a></li>
+                <li><a href='./contacts.html'>contacts</a></li>
+            </ul>
+        </div>
+        <div class="mainbar">
+            <div class="mb-title">
+                <h1 id="picture-title">works</h1>
+            </div>
+            <div class="mb-info scroll">
+                <div id="picture0" class="mb-img">
+                    <img src="./img/works/Forest princess.svg" alt="" id="pictureToShow0">
+                </div>
+                <div id="picture1" class="mb-img">
+                    <img src="./img/works/Tapes.svg" alt="" id="pictureToShow1">
+                </div>
+                <div id="picture2" class="mb-img">
+                    <img src="./img/works/Old panasonic.svg" alt="" id="pictureToShow2">
+                </div>
+                <div id="picture3" class="mb-img">
+                    <img src="./img/works/Frozen dude.svg" alt="" id="pictureToShow3">
+                </div>
+                <div id="picture4" class="mb-img">
+                    <img src="./img/works/Sounds better....svg" alt="" id="pictureToShow4">
+                </div>
+                <div id="picture5" class="mb-img">
+                    <img src="./img/works/Road to goal.svg" alt="" id="pictureToShow5">
+                </div>
+                <div id="picture6" class="mb-img">
+                    <img src="./img/works/Idea embodiment.svg" alt="" id="pictureToShow6">
+                </div>
+                <div id="picture7" class="mb-img">
+                    <img src="./img/works/Coffee lover.svg" alt="" id="pictureToShow7">
+                </div>
+                <div id="picture8" class="mb-img">
+                    <img src="./img/works/Book cover.jpg" alt="" id="pictureToShow8">
+                </div>
+                <div id="picture9" class="mb-img">
+                    <img src="./img/works/Shopper.svg" alt="" id="pictureToShow9">
+                </div>
+                <div id="picture10" class="mb-img">
+                    <img src="./img/works/Woodworking icons.svg" alt="" id="pictureToShow10">
+                </div>
+                <div id="picture11" class="mb-img">
+                    <img src="./img/works/Арахисовая паста.svg" alt="" id="pictureToShow11">
+                </div>
+                <div id="picture12" class="mb-img">
+                    <img src="./img/works/Geometrica.svg" alt="" id="pictureToShow12">
+                </div>
+                <div id="picture13" class="mb-img">
+                    <img src="./img/works/Bright icons.svg" alt="" id="pictureToShow13">
+                </div>
+                <div id="picture14" class="mb-img">
+                    <img src="./img/works/Fruits.svg" alt="" id="pictureToShow14">
+                </div>
+            </div>
+            <div class="mb-desc">
+                <p id="picDescription">Представляю мои работы. На сайте горизонтальная прокрутка.</p>
+            </div>
+        </div>
+        <script type='text/javascript'
+            src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+        <script src="./js/scrollHor.js"></script>
+        <script>
+            $(function () {
+                $(".scroll").mousewheel(function (event, delta) {
+                    this.scrollLeft -= (delta * 50);
+                    event.preventDefault();
+                });
+            });
+        </script>
+        <script src="./js/scrollPicturesEvents.js"></script>
+    </section>
+</body>
+
+</html>

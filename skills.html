@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uta.Manufacture | About</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
+    <!-- <link rel="stylesheet" href="./js/j    InvertScroll-master/dist/css/jInvertScroll.css"> -->
+</head>
+
+<body>
+    <section class="main skills-main">
+        <div class="sidebar">
+            <img src="./img/header/logo.svg" alt="uta manufacture" class="logo">
+            <ul>
+                <li><a href='./home.html'>home</a></li>
+                <li><a href='./works.html'>works</a></li>
+                <!-- <li><a href='./sketches.html'>sketches</a></li> -->
+                <li><a class="active" href='./skills.html'>skills</a></li>
+                <li><a href='./about.html'>about</a></li>
+                <li><a href='./contacts.html'>contacts</a></li>
+            </ul>
+        </div>
+        <div class="mainbar mainbar-about">
+            <div class="mb-title about-navbar">
+                <h1 id="creativeSkillsButton">Creative</h1>
+                <h1 id="techSkillsButton">Tech</h1>
+                <h1 id="softSkillsButton">Soft</h1>
+            </div>
+            <div class="my-skills">
+                <div class="tech-skls">
+                    <ul>
+                        <li><span class="list"></span>adobe illustrator</li>
+                        <li><span class="list"></span>adobe photoshop</li>
+                        <li><span class="list"></span>microsoft power point</li>
+                        <li><span class="list"></span>html</li>
+                        <li><span class="list"></span>css</li>
+                        <li><span class="list"></span>js</li>
+                        <li><span class="list"></span>php</li>
+                    </ul>
+                </div>
+                <div class="creative-skls">
+                    <ul>
+                        <li><span class="list"></span>дизайн персонажа</li>
+                        <li><span class="list"></span>лого и брендинг</li>
+                        <li><span class="list"></span>иллюстрирование</li>
+                        <li><span class="list"></span>графический дизайн</li>
+                        <li><span class="list"></span>типографика</li>
+                        <li><span class="list"></span>инфографика</li>
+                        <li><span class="list"></span>веб дизайн</li>
+                        <li class="sketches-link"><span class="list"></span><a target="_blank" href="https://www.instagram.com/uta.sketches/">рисование<span>от руки</span></a></li>
+                    </ul>
+                </div>
+                <div class="soft-skls">
+                    <ul>
+                        <li><span class="list"></span>ответственность</li>
+                        <li><span class="list"></span>открытость</li>
+                        <li><span class="list"></span>уверенность</li>
+                        <li><span class="list"></span>умение распределить время</li>
+                        <li><span class="list"></span>понимание человеческих потребностей</li>
+                        <li><span class="list"></span>разносторонность в задачах</li>
+                        <li><span class="list"></span>честность</li>
+                        <li><span class="list"></span>генерация, остроумных и не очень, шуток(для себя так точно) =)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type='text/javascript'
+            src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+        <script src="./js/scrollHor.js"></script>
+        <script>
+            $(function () {
+                $(".scroll").mousewheel(function (event, delta) {
+                    this.scrollLeft -= (delta * 50);
+                    event.preventDefault();
+                });
+            });
+        </script>
+        <script src="./js/scrollPicturesEvents.js"></script>
+        <script src="./js/aboutNavs.js"></script>
+    </section>
+</body>
+
+</html>

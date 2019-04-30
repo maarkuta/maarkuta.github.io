@@ -1,14 +1,24 @@
 @font-face {
     font-family: HelveticaThin;
     src: url(../fonts/HelveticaThin/HelveticaThin.woff);
-  }
+}
 
-  @font-face {
+@font-face {
+    font-family: HelveticaBold;
+    src: url(../fonts/HelveticaBold/HelveticaBold.woff);
+}
+
+@font-face {
     font-family: HelveticaMedium;
     src: url(../fonts/HelveticaMedium/HelveticaMedium.woff);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: HelveticaUltraLight;
     src: url(../fonts/HelveticaUltraLight/HelveticaUltraLight.woff);
-  }
+}
+
+@font-face {
+    font-family: HelveticaRegular;
+    src: url(../fonts/HelveticaRegular/HelveticaRegular.woff);
+}

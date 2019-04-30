@@ -332,3 +332,59 @@ span.list {
     background-color: white;
     border-bottom: 2px solid black;
 }
+
+.sidebar ul li.closeBurger {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    padding: 0;
+    bottom: 5vh;
+}
+
+.closeBurger span {
+    position: absolute;
+    height: 5px;
+    width: 110px;
+    background-color: black;
+    display: flex;
+    margin-top: 6vh;
+}
+
+.closeBurger span:first-child {
+    transform: rotate(45deg);
+}
+
+.closeBurger span:last-child {
+    transform: rotate(-45deg);
+}
+
+.burger-mnu {
+    display: none;
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    right: 5vw;
+    top: 5vw;
+    flex-direction: column;
+}
+
+.burger-mnu span{
+    height: 7px;
+    width: 90px;
+    background-color: black;
+    margin-top: 2vh;
+}
+
+.burger-mnu span:first-child{
+    height: 7px;
+    width: 120px;
+    background-color: black;
+}
+
+.burger-mnu span:last-child{
+    height: 7px;
+    width: 50px;
+    background-color: black;
+}

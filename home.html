@@ -8,11 +8,17 @@
     <title>Uta.Manufacture | Home</title>
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/mainPage.css">
+    <link rel="stylesheet" href="./css/_media.css">
 </head>
 
 <body>
     <section class="main">
         <div class="sidebar">
+            <div id="burgerMnu" class="burger-mnu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <img src="./img/header/logo.svg" alt="uta manufacture" class="logo">
             <ul>
                 <li><a class="active" href='./home.html'>home</a></li>
@@ -20,6 +26,7 @@
                 <li><a href='./skills.html'>skills</a></li>
                 <li><a href='./about.html'>about</a></li>
                 <li><a href='./contacts.html'>contacts</a></li>
+                <li id="closeBurger" class="closeBurger"><span></span><span></span></li>
             </ul>
         </div>
         <div class="mainbar">
@@ -33,6 +40,8 @@
         </div>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"
             integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="./js/scrollHor.js"></script>
+        <script src="./js/aboutNavs.js"></script>
         <script>
             $(function () {
                 $(".scroll").mousewheel(function (event, delta) {

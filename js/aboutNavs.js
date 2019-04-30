@@ -2,7 +2,28 @@ let techSection = $(".tech-skls ul");
 let creativeSection = $(".creative-skls ul");
 let softSection = $(".soft-skls ul");
 
-$("#creativeSkillsButton").click(function(){
+$(document).ready(function() {
+    $(".sidebar ul").css({
+        "display": "none",
+    });
+
+    $(".main .sidebar").css({
+        "flex-direction": "column",
+        "height": "15vh",
+    });
+
+    $(".sidebar img").css({
+        "margin-right": "66vw",
+    });
+
+    $("#burgerMnu").css({
+        "display": "flex",
+        "right": "5vw"
+    });
+});
+
+
+$("#creativeSkillsButton").click(function () {
     softSection.css({
         "display": "none"
     });
@@ -31,7 +52,7 @@ $("#creativeSkillsButton").click(function(){
     });
 });
 
-$("#techSkillsButton").click(function(){
+$("#techSkillsButton").click(function () {
     softSection.css({
         "display": "none"
     });
@@ -60,7 +81,7 @@ $("#techSkillsButton").click(function(){
     });
 });
 
-$("#softSkillsButton").click(function(){
+$("#softSkillsButton").click(function () {
     softSection.css({
         "display": "flex"
     });
@@ -90,7 +111,7 @@ $("#softSkillsButton").click(function(){
 });
 
 
-$("#aboutBtn").click(function() {
+$("#aboutBtn").click(function () {
     $(".about-me-text").css({
         "display": "flex",
         "opacity": 0
@@ -117,7 +138,7 @@ $("#aboutBtn").click(function() {
     });
 });
 
-$("#hobbiesBtn").click(function() {
+$("#hobbiesBtn").click(function () {
     $(".about-me-text").css({
         "display": "none"
     });
@@ -155,3 +176,50 @@ $("#hobbiesBtn").click(function() {
         "margin-bottom": "3px"
     });
 });
+
+// burger menu
+
+$("#closeBurger").click(function () {
+    $(".sidebar ul").css({
+        "display": "none",
+    });
+
+    $(".main .sidebar").animate({
+        "flex-direction": "column",
+        "height": "15vh",
+    }, 500);
+
+    $(".sidebar img").animate({
+        "margin-right": "66vw",
+    }, 800);
+
+    $(".burger-mnu").css({
+        "display": "flex",
+    });
+
+    $(".burger-mnu").animate({
+        "right": "5vw"
+    });
+
+});
+
+$("#burgerMnu").click(function () {
+    $(".sidebar ul").css({
+        "display": "flex",
+    });
+
+    $(".main .sidebar").animate({
+        "flex-direction": "column",
+        "height": "100vh",
+    }, 500);
+
+    $(".sidebar img").animate({
+        "margin-right": "66vw",
+    }, 800);
+
+    $("#burgerMnu").animate({
+        "right": "-15vw"
+    }, 500)
+
+});
+

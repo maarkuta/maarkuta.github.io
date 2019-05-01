@@ -85,7 +85,6 @@
 
     .mb-desc {
         position: relative;
-        font-size: 2em;
     }
 
     .mb-desc p {
@@ -116,6 +115,32 @@
     }
     .burger-mnu {
         display: flex;
+    }
+
+    .mb-title{
+        font-size: 1em;
+        height: 0;
+    }
+
+    .mb-title h1 {
+        margin: 0;
+    }
+
+    .mb-desc {
+
+    }
+
+    .mb-desc p {
+       line-height: 20px; 
+       margin-top: 10vh;
+    }
+
+    .mb-desc p#picDescription > p:last-child {
+        margin: 0;
+    }
+
+    .mb-desc p#picDescription > p:first-child {
+        margin-top: 1vh;
     }
 }
 

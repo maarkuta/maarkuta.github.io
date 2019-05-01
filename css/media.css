@@ -328,6 +328,9 @@
     .mainbar-contacts .contact-links {
         top: 38vh;
     }
+    .mainbar-contacts .contact-links li:first-child {
+        display: none
+    }
     .contact-icon {
         margin-right: 10px;
     }

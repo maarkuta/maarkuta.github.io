@@ -65,6 +65,32 @@
     }
     .hobbies-data .hobbie-item {
         align-items: center;
+        width: 186px;
+    }
+    .hobbies-data .hobbie-item p {
+        text-align: center;
+    }
+
+    .mb-title {
+        position: relative;
+        top: 15vh;
+        height: 10%;
+        font-size: 3em;
+    }
+
+    .mb-info {
+        position: relative;
+        width: 100vw;
+    }
+
+    .mb-desc {
+        position: relative;
+        font-size: 2em;
+    }
+
+    .mb-desc p {
+        font-size: 1em;
+        letter-spacing: 2px;
     }
 }
 

@@ -2,7 +2,7 @@ let techSection = $(".tech-skls ul");
 let creativeSection = $(".creative-skls ul");
 let softSection = $(".soft-skls ul");
 
-if (window.screen.width <= 992) {
+if (window.screen.width <= 1200) {
     // burger menu
     $("#burgerMnu").click(function () {
         $(".sidebar ul").css({
@@ -18,10 +18,10 @@ if (window.screen.width <= 992) {
         }, 500);
 
         $(".sidebar img").animate({
-            "margin-right": "0vw",
+            "margin-right": "0vw"
         }, 800);
 
-        if (window.screen.width <= 992 && window.screen.width >= 425) {
+        if (window.screen.width <= 1200 && window.screen.width >= 425) {
             $("#burgerMnu").animate({
                 "right": "-15vw"
             }, 500);

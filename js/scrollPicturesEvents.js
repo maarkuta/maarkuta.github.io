@@ -16,23 +16,37 @@ let picuresDescriptions = [
     'Фрукты в упрощенном стиле. Хотел подчеркуть основные особенности представленных фрутков, используя простые формы',
 ];
 
+
 let neededPage = window.location.href.toString().split("/")[6];
 
 for (let i = 0; i < 30; i++) { // меньше 30 ибо впадлу считать количество елементов. Так быстрее.
-    $("#picture" + i).click(function () {
-        let imgSrc = $("#pictureToShow" + i).attr("src");
+    if (window.screen.width >= 1200) {
+        $("#picture" + i).click(function () {
+            let imgSrc = $("#pictureToShow" + i).attr("src");
 
-        $("body").append("<img src='" + imgSrc + "' class='img-preview'/>").show("slow");
-        $("body").append("<div class='img-preview-bcg'></div>").show("slow");
+            $("body").append("<img src='" + imgSrc + "' class='img-preview'/>").show("slow");
+            $("body").append("<div class='img-preview-bcg'></div>").show("slow");
 
-        if (neededPage === "sketches.html") {
-            $(".img-preview").css({
-                "transition": "0",
-                "width": "54vw",
-                "right": "12vw"
-            });
+            if (neededPage === "sketches.html") {
+                $(".img-preview").css({
+                    "transition": "0",
+                    "width": "54vw",
+                    "right": "12vw"
+                });
 
-            setTimeout(function () {
+                setTimeout(function () {
+                    $(".img-preview").css({
+                        "opacity": "1",
+                        "transition": ".7s ease"
+                    });
+
+                    $(".img-preview-bcg").css({
+                        "opacity": "1",
+                        "transition": ".4s ease"
+                    });
+                }, 100);
+            }
+            else {
                 $(".img-preview").css({
                     "opacity": "1",
                     "transition": ".7s ease"
@@ -42,92 +56,103 @@ for (let i = 0; i < 30; i++) { // меньше 30 ибо впадлу счита
                     "opacity": "1",
                     "transition": ".4s ease"
                 });
-            }, 100);
-        }
-        else {
-            $(".img-preview").css({
-                "opacity": "1",
-                "transition": ".7s ease"
+
+            }
+
+            $(".sidebar li").remove();
+            $(".sidebar ul").append("<li id='closePreview' style='opacity: 0' class='close-btn'>close</li>");
+
+            $("#closePreview").css({
+                "cursor": "pointer",
+                "padding": "2vh",
+                "background-color": "white"
             });
 
-            $(".img-preview-bcg").css({
-                "opacity": "1",
-                "transition": ".4s ease"
+            $("#closePreview:hover").css({
+                "background-color": "#04900026"
             });
 
-        }
-
-        $(".sidebar li").remove();
-        $(".sidebar ul").append("<li id='closePreview' style='opacity: 0' class='close-btn'>close</li>");
-
-        $("#closePreview").css({
-            "cursor": "pointer",
-            "padding": "2vh",
-            "background-color": "white"
-        });
-
-        $("#closePreview:hover").css({
-            "background-color": "#04900026"
-        });
-
-        $("#closePreview").animate({
-            opacity: 1,
-        }, 1000, function () {
-            // Animation complete.
-        });
-
-        $("#closePreview").click(function () {
-            $(".img-preview").css({
-                "opacity": "0",
-                "transition": "0.5s ease"
-            });
-
-            $(".img-preview-bcg").css({
-                "opacity": "0",
-                "transition": "0.5s ease"
-            });
-
-            setTimeout(function () {
-                $(".img-preview").remove();
-                $(".img-preview-bcg").remove();
-            }, 500);
-
-            $("#closePreview").css("display", "none");
-
-            $(".sidebar ul").append("<li><a href='./home.html' style='opacity: 0'>home</a></li>");
-            $(".sidebar ul").append("<li><a class='active' href='./works.html' style='opacity: 0'>works</a></li>");
-            $(".sidebar ul").append("<li><a href='./skills.html' style='opacity: 0'>skills</a></li>");
-            $(".sidebar ul").append("<li><a href='./about.html' style='opacity: 0'>about</a></li>");
-            $(".sidebar ul").append("<li><a href='./contacts.html' style='opacity: 0'>contacts</a></li>");
-
-            $(".sidebar ul li a").animate({
+            $("#closePreview").animate({
                 opacity: 1,
             }, 1000, function () {
                 // Animation complete.
             });
+
+            $("#closePreview").click(function () {
+                $(".img-preview").css({
+                    "opacity": "0",
+                    "transition": "0.5s ease"
+                });
+
+                $(".img-preview-bcg").css({
+                    "opacity": "0",
+                    "transition": "0.5s ease"
+                });
+
+                setTimeout(function () {
+                    $(".img-preview").remove();
+                    $(".img-preview-bcg").remove();
+                }, 500);
+
+                $("#closePreview").css("display", "none");
+
+                $(".sidebar ul").append("<li><a href='./home.html' style='opacity: 0'>home</a></li>");
+                $(".sidebar ul").append("<li><a class='active' href='./works.html' style='opacity: 0'>works</a></li>");
+                $(".sidebar ul").append("<li><a href='./skills.html' style='opacity: 0'>skills</a></li>");
+                $(".sidebar ul").append("<li><a href='./about.html' style='opacity: 0'>about</a></li>");
+                $(".sidebar ul").append("<li><a href='./contacts.html' style='opacity: 0'>contacts</a></li>");
+
+                $(".sidebar ul li a").animate({
+                    opacity: 1,
+                }, 1000, function () {
+                    // Animation complete.
+                });
+            });
+
         });
+    }
 
-    });
 
-    $("#picture" + i).hover(function () {
-        let picName = $("#picture" + i + " > img").attr("src").substring(12);
 
-        $("#picture-title").css("opacity", 0).text(picName.substring(-1, picName.length - 4));
-        $("#picture-title").animate({
-            opacity: 1
-        }, "slow");
-        $("#picture-title").css("opacity", 0);
+    if (window.screen.width <= 1200) {
+        $("#picture" + i).click(function () {
+            let picName = $("#picture" + i + " > img").attr("src").substring(12);
 
-        $("#picDescription").css("opacity", 0).text(picuresDescriptions[i]);
-        if (i === 4) {
-            $("#picDescription").css("opacity", 0).append("<p>Иллюстрация для проекта <span style='border-bottom: black 2px solid'><a  target='_blank' href='https://dererumnatura.github.io/music.html'>Sounds better...</a></span><p>Идея заключаеться в создании плейлистов по жанрам. Ничего нового, и не очень нужно в эпоху стриминговых сервисов, но мне нравиться делать прелоадеры и иллюстрации, так что будем развиваться.</p>");
-        }
+            $("#picture-title").css("opacity", 0).text(picName.substring(-1, picName.length - 4));
+            $("#picture-title").animate({
+                opacity: 1
+            }, "slow");
+            $("#picture-title").css("opacity", 0);
 
-        $("#picDescription").animate({
-            opacity: 1
-        }, "slow");
-        $("#picDescription").css("opacity", 0);
-    });
+            $("#picDescription").css("opacity", 0).text(picuresDescriptions[i]);
+            if (i === 4) {
+                $("#picDescription").css("opacity", 0).append("<p>Иллюстрация для проекта <span style='border-bottom: black 2px solid'><a  target='_blank' href='https://dererumnatura.github.io/music.html'>Sounds better...</a></span><p>Идея заключаеться в создании плейлистов по жанрам. Ничего нового, и не очень нужно в эпоху стриминговых сервисов, но мне нравиться делать прелоадеры и иллюстрации, так что будем развиваться.</p>");
+            }
+
+            $("#picDescription").animate({
+                opacity: 1
+            }, "slow");
+            $("#picDescription").css("opacity", 0);
+        });
+    } else {
+        $("#picture" + i).hover(function () {
+            let picName = $("#picture" + i + " > img").attr("src").substring(12);
+
+            $("#picture-title").css("opacity", 0).text(picName.substring(-1, picName.length - 4));
+            $("#picture-title").animate({
+                opacity: 1
+            }, "slow");
+            $("#picture-title").css("opacity", 0);
+
+            $("#picDescription").css("opacity", 0).text(picuresDescriptions[i]);
+            if (i === 4) {
+                $("#picDescription").css("opacity", 0).append("<p>Иллюстрация для проекта <span style='border-bottom: black 2px solid'><a  target='_blank' href='https://dererumnatura.github.io/music.html'>Sounds better...</a></span><p>Идея заключаеться в создании плейлистов по жанрам. Ничего нового, и не очень нужно в эпоху стриминговых сервисов, но мне нравиться делать прелоадеры и иллюстрации, так что будем развиваться.</p>");
+            }
+
+            $("#picDescription").animate({
+                opacity: 1
+            }, "slow");
+            $("#picDescription").css("opacity", 0);
+        });
+    }
 }
-
-

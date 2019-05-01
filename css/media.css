@@ -122,6 +122,7 @@
     }
     .my-skills li {
         font-size: 2em;
+        letter-spacing: 2px;
     }
     .soft-skls {
         width: 83vw;
@@ -306,8 +307,9 @@
     .hobbies-data .hobbie-item {
         width: 166px;
     }
-    .my-skills ul li {
+    .mainbar-about .my-skills ul li {
         font-size: 1em;
+        letter-spacing: 2px;
     }
     .main .mainbar .skills-navbar {
         top: 15vh;

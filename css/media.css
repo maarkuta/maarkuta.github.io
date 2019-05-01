@@ -35,9 +35,30 @@
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (max-width: 1200px) {}
-
-/* Medium Devices, Desktops */
+@media only screen and (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+    }
+    .sidebar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 14vh;
+        width: 100vw;
+        background-color: #d1ecd1;
+        align-items: center;
+    }
+    .main .sidebar img {
+        width: 17vw;
+        margin: 2vh 70vw 0 0;
+    }
+    .main .sidebar ul {
+        display: none;
+    }
+    .burger-mnu {
+        display: flex;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     .main {
@@ -59,7 +80,6 @@
     .main .sidebar ul {
         display: none;
     }
-
     .burger-mnu {
         display: flex;
     }

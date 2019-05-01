@@ -51,9 +51,20 @@
         color: #000;
         background-color: #d1ecd1;
         width: 27vw;
-        /* height: 33vh; */
         margin: 0;
         padding: 10vh 3vw 15vh 4vw;
+    }
+    .main .mainbar .about-navbar {
+        top: 10vh;
+    }
+    .main .mainbar .about-me-text {
+        top: 33vh;
+    }
+    .main .mainbar .hobbies-data {
+        top: 33vh;
+    }
+    .hobbies-data .hobbie-item {
+        align-items: center;
     }
 }
 

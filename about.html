@@ -8,20 +8,26 @@
     <title>Uta.Manufacture | About</title>
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/mainPage.css">
-    <link rel="stylesheet" href="./css/_media.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
     <section class="main">
         <div class="sidebar">
+            <div id="burgerMnu" class="burger-mnu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <img src="./img/header/logo.svg" alt="uta manufacture" class="logo">
             <ul>
                 <li><a href='./home.html'>home</a></li>
                 <li><a href='./works.html'>works</a></li>
-                <!-- <li><a href='./sketches.html'>sketches</a></li> -->
                 <li><a href='./skills.html'>skills</a></li>
                 <li><a class="active" href='./about.html'>about</a></li>
                 <li><a href='./contacts.html'>contacts</a></li>
+                <li id="closeBurger" class="closeBurger"><span></span><span></span></li>
             </ul>
         </div>
         <div class="mainbar">
@@ -90,51 +96,23 @@
                     <p>шитьё</p>
                 </div>
             </div>
-            <!-- <div class="mb-info scroll">
-                <div id="picture0" class="mb-img">
-                    <img src="./img/header/header-illustration.svg" alt="" id="pictureToShow0">
-                </div>
-                <div id="picture1" class="mb-img">
-                    <img src="./img/Снимок экрана (14).png" alt="" id="pictureToShow1">
-                </div>
-                <div id="picture2" class="mb-img">
-                    <img src="./img/Снимок экрана (20).png" alt="" id="pictureToShow2">
-                </div>
-                <div id="picture3" class="mb-img">
-                    <img src="./img/header/logo.svg" alt="">
-                </div>
-                <div id="picture3" class="mb-img">
-                    <img src="./img/header/header-illustration.svg" alt="">
-                </div>
-                <div id="picture3" class="mb-img">
-                    <img src="./img/header/header-illustration.svg" alt="">
-                </div>
-                <div id="picture3" class="mb-img">
-                    <img src="./img/header/header-illustration.svg" alt="">
-                </div>
-            </div>
-            <div class="mb-desc mb-desc-sketches">
-                <p>Text long long long about my sketckes princeples</p>
-                <p>Text long long long about my sketckes princeples</p>
-                <p>Text long long long about my sketckes princeples</p>
-            </div> -->
         </div>
         <!-- <script type='text/javascript'
             src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script> -->
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-        <script src="./js/scrollHor.js"></script>
-        <script>
-            $(function () {
-                $(".scroll").mousewheel(function (event, delta) {
-                    this.scrollLeft -= (delta * 50);
-                    event.preventDefault();
-                });
-            });
-        </script>
-        <script src="./js/scrollPicturesEvents.js"></script>
-        <script src="./js/aboutNavs.js"></script>
     </section>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/scrollHor.js"></script>
+    <script>
+        $(function () {
+            $(".scroll").mousewheel(function (event, delta) {
+                this.scrollLeft -= (delta * 50);
+                event.preventDefault();
+            });
+        });
+    </script>
+    <script src="./js/scrollPicturesEvents.js"></script>
+    <script src="./js/aboutNavs.js"></script>
 </body>
 
 </html>

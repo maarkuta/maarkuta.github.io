@@ -129,15 +129,12 @@
     .mainbar-contacts ul li {
         font-size: 3em;
     }
-
-    .mainbar-contacts img{
+    .mainbar-contacts img {
         width: 5vw;
     }
-
-    .mainbar-contacts .contact-links{
+    .mainbar-contacts .contact-links {
         top: 38vh;
     }
-
     .contact-icon {
         margin-right: 50px;
     }
@@ -155,7 +152,7 @@
         width: 90vw;
         justify-content: space-around;
     }
-    .main .mainbar .skills-navbar h1{
+    .main .mainbar .skills-navbar h1 {
         font-size: 1.2em;
     }
     .main {
@@ -227,6 +224,18 @@
     .mb-desc p#picDescription {
         font-size: 1.5em;
     }
+    .mainbar-contacts ul li {
+        font-size: 2em;
+    }
+    .mainbar-contacts img {
+        width: 5vw;
+    }
+    .mainbar-contacts .contact-links {
+        top: 28vh;
+    }
+    .contact-icon {
+        margin-right: 50px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -297,28 +306,36 @@
     .hobbies-data .hobbie-item {
         width: 166px;
     }
-
     .my-skills ul li {
         font-size: 1em;
     }
-
     .main .mainbar .skills-navbar {
         top: 15vh;
     }
-
     .my-skills {
         width: 90vw;
     }
-
-    .my-skills span{
+    .my-skills span {
         width: 0;
         height: 0;
+    }
+    .mainbar-contacts ul li {
+        font-size: 1.1em;
+    }
+    .mainbar-contacts img {
+        width: 5vw;
+    }
+    .mainbar-contacts .contact-links {
+        top: 38vh;
+    }
+    .contact-icon {
+        margin-right: 10px;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    .hobbies-data .hobbie-item {
-        width: 140px;
+    .mainbar .hobbies-data .hobbie-item {
+        width: 140px !important;
     }
     .mb-desc p#picDescription {
         font-size: 0.9em;
@@ -327,5 +344,18 @@
     .mb-desc p#picDescription p {
         font-size: 0.9em;
         line-height: 17px;
+    }
+
+    .mainbar-contacts ul li {
+        font-size: 0.8em;
+    }
+    .mainbar-contacts img {
+        width: 5vw;
+    }
+    .mainbar-contacts .contact-links {
+        top: 38vh;
+    }
+    .contact-icon {
+        margin-right: 10px;
     }
 }

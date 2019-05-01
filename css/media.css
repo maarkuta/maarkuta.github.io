@@ -12,6 +12,7 @@
         width: 100vw;
         background-color: #d1ecd1;
         align-items: center;
+        z-index: 999;
     }
     .main .sidebar img {
         width: 17vw;
@@ -30,6 +31,7 @@
     .mainbar>* {
         position: absolute;
         top: 17vh;
+        z-index: 1;
     }
     .mainbar .home-first-title {
         position: absolute;

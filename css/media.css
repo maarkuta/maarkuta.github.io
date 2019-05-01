@@ -55,13 +55,21 @@
         padding: 10vh 3vw 15vh 4vw;
     }
     .main .mainbar .about-navbar {
-        top: 10vh;
+        top: 17vh;
+        font-size: 2em;
     }
     .main .mainbar .about-me-text {
         top: 33vh;
+        font-size: 2em;
+        width: 80%;
+        line-height: 3em;
+    }
+    .main .mainbar .about-me-text p {
+        line-height: 50px;
     }
     .main .mainbar .hobbies-data {
         top: 33vh;
+        width: 90%;
     }
     .hobbies-data .hobbie-item {
         align-items: center;
@@ -70,30 +78,71 @@
     .hobbies-data .hobbie-item p {
         text-align: center;
     }
-
     .mb-title {
         position: relative;
         top: 15vh;
-        height: 10%;
+        height: 7%;
         font-size: 3em;
     }
-
+    .mb-title h1#picture-title {
+        font-size: 1em;
+        margin: 0;
+    }
     .mb-info {
         position: relative;
         width: 100vw;
+        height: 56%;
     }
-
+    .mb-info img {
+        height: 50vh;
+    }
     .mb-desc {
         position: relative;
+        height: 15%;
     }
-
     .mb-desc p {
-        font-size: 1em;
+        font-size: 2em;
         letter-spacing: 2px;
+    }
+    .mb-desc p#picDescription {
+        font-size: 1.7em;
+    }
+    .mb-desc p#picDescription>p:last-child {
+        margin: 0;
+        font-size: 1em;
+    }
+    .mb-desc p#picDescription>p:first-child {
+        margin-top: 1vh;
+        font-size: 1em;
+        margin: 0;
+    }
+    .my-skills {
+        width: 64vw;
+        top: 26vh;
+    }
+    .my-skills li {
+        font-size: 2em;
+    }
+    .soft-skls {
+        width: 83vw;
     }
 }
 
 @media only screen and (max-width: 992px) {
+    #techSkillsButton {
+        margin-bottom: 3px;
+    }
+    #softSkillsButton {
+        margin-bottom: 3px;
+    }
+    .main .mainbar .skills-navbar {
+        top: 22vh;
+        width: 90vw;
+        justify-content: space-around;
+    }
+    .main .mainbar .skills-navbar h1{
+        font-size: 1.2em;
+    }
     .main {
         flex-direction: column;
     }
@@ -116,37 +165,54 @@
     .burger-mnu {
         display: flex;
     }
-
-    .mb-title{
+    .mb-title {
         font-size: 1em;
         height: 0;
     }
-
     .mb-title h1 {
         margin: 0;
     }
-
-    .mb-desc {
-
+    .mainbar .mb-desc {
+        height: 15%;
     }
-
     .mb-desc p {
-       line-height: 20px; 
-       margin-top: 10vh;
+        line-height: 20px;
+        margin-top: 10vh;
     }
-
-    .mb-desc p#picDescription > p:last-child {
+    .mb-desc p#picDescription>p:last-child {
         margin: 0;
     }
-
-    .mb-desc p#picDescription > p:first-child {
+    .mb-desc p#picDescription>p:first-child {
         margin-top: 1vh;
     }
 }
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .mb-desc p {
+        margin: 2vh 0 0 0;
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+    .mb-desc {
+        height: 10vh;
+        position: absolute;
+        top: 81vh;
+    }
+    .mb-title h1#picture-title {
+        font-size: 1.5em;
+    }
+    .mb-title {
+        top: 18vh;
+    }
+    .mb-info {
+        top: 21vh;
+    }
+    .mb-desc p#picDescription {
+        font-size: 1.5em;
+    }
+}
 
 /* Extra Small Devices, Phones */
 
@@ -174,5 +240,77 @@
     }
     .closeBurger {
         bottom: 8vh;
+    }
+    .mb-desc p#picDescription {
+        font-size: 1em;
+        line-height: 23px;
+    }
+    .mb-desc {
+        top: 74vh;
+    }
+    .mb-desc p p {
+        line-height: 23px;
+    }
+    .mb-info {
+        height: 45%;
+    }
+    .mb-info img {
+        height: 40vh;
+    }
+    .main .mainbar .about-navbar {
+        font-size: 1em;
+        height: 10vh;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .main .mainbar .about-navbar h1:last-child {
+        margin-bottom: 3px;
+    }
+    .main .mainbar .about-me-text p {
+        margin-top: 0;
+        line-height: 35px;
+    }
+    .main .mainbar .about-me-text {
+        line-height: 1em;
+        font-size: 1em;
+    }
+    .main .mainbar .about-me-text {
+        top: 30vh;
+    }
+    .hobbies-data .hobbie-item {
+        width: 166px;
+    }
+
+    .my-skills ul li {
+        font-size: 1em;
+    }
+
+    .main .mainbar .skills-navbar {
+        top: 15vh;
+    }
+
+    .my-skills {
+        width: 90vw;
+    }
+
+    .my-skills span{
+        width: 0;
+        height: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hobbies-data .hobbie-item {
+        width: 140px;
+    }
+    .mb-desc p#picDescription {
+        font-size: 0.9em;
+        line-height: 15px;
+    }
+    .mb-desc p#picDescription p {
+        font-size: 0.9em;
+        line-height: 17px;
     }
 }

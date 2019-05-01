@@ -8,7 +8,7 @@
     <title>Uta.Manufacture | About</title>
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/mainPage.css">
-    <link rel="stylesheet" href="./css/_media.css">
+    <link rel="stylesheet" href="./css/media.css">
     <!-- <link rel="stylesheet" href="./js/j    InvertScroll-master/dist/css/jInvertScroll.css"> -->
 </head>
 
@@ -16,6 +16,12 @@
     <section class="main">
         <div class="sidebar">
             <img src="./img/header/logo.svg" alt="uta manufacture" class="logo">
+            <div id="burgerMnu" class="burger-mnu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li><a href='./home.html'>home</a></li>
                 <li><a href='./works.html'>works</a></li>
@@ -23,6 +29,7 @@
                 <li><a href='./skills.html'>skills</a></li>
                 <li><a href='./about.html'>about</a></li>
                 <li><a class="active" href='./contacts.html'>contacts</a></li>
+                <li id="closeBurger" class="closeBurger"><span></span><span></span></li>
             </ul>
         </div>
         <div class="mainbar mainbar-contacts">
@@ -36,7 +43,8 @@
                         class="contact-icon telegram-i"></span><a href="http://t.me/uta_manufacture">telegram</a></li>
                 <li><img src="./img/noun_webcam_644546.svg" alt="uta manufacture skype"
                         class="contact-icon skype-i"></span><a href="skype:live:uta.manufacture?userinfo">skype</a></li>
-                <a href=""></a>
+                <li><img src="./img/noun_webcam_644546.svg" alt="uta manufacture skype"
+                        class="contact-icon skype-i"></span><a href="tel:+380664249841">позвонить</a></li>
             </ul>
         </div>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -50,6 +58,7 @@
                 });
             });
         </script>
+        <script src="./js/aboutNavs.js"></script>
         <script src="./js/scrollPicturesEvents.js"></script>
     </section>
 </body>

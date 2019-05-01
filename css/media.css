@@ -126,6 +126,21 @@
     .soft-skls {
         width: 83vw;
     }
+    .mainbar-contacts ul li {
+        font-size: 3em;
+    }
+
+    .mainbar-contacts img{
+        width: 5vw;
+    }
+
+    .mainbar-contacts .contact-links{
+        top: 38vh;
+    }
+
+    .contact-icon {
+        margin-right: 50px;
+    }
 }
 
 @media only screen and (max-width: 992px) {

@@ -366,25 +366,25 @@ span.list {
     width: 10vh;
     position: absolute;
     right: 5vw;
-    top: 5vw;
+    top: 4vw;
     flex-direction: column;
 }
 
 .burger-mnu span{
-    height: 7px;
+    height: 2px;
     width: 90px;
     background-color: black;
-    margin-top: 2vh;
+    margin-top: 1.3vh;
 }
 
 .burger-mnu span:first-child{
     height: 7px;
-    width: 120px;
+    width: 90px;
     background-color: black;
 }
 
 .burger-mnu span:last-child{
     height: 7px;
-    width: 50px;
+    width: 90px;
     background-color: black;
 }

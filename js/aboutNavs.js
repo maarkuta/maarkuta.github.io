@@ -2,25 +2,60 @@ let techSection = $(".tech-skls ul");
 let creativeSection = $(".creative-skls ul");
 let softSection = $(".soft-skls ul");
 
-$(document).ready(function() {
-    $(".sidebar ul").css({
-        "display": "none",
+if (window.screen.width <= 992) {
+    // burger menu
+    $("#burgerMnu").click(function () {
+        $(".sidebar ul").css({
+            "display": "flex",
+            "font-size": "8vh",
+            "margin-top": "10vh",
+            "align-items": "center"
+        });
+
+        $(".main .sidebar").animate({
+            "flex-direction": "column",
+            "height": "100vh",
+        }, 500);
+
+        $(".sidebar img").animate({
+            "margin-right": "0vw",
+        }, 800);
+
+        $("#burgerMnu").animate({
+            "right": "-15vw"
+        }, 500);
+
+        $(".closeBurger").css({
+            "display": "flex"
+        });
+
+    });
+    $("#closeBurger").click(function () {
+        $(".sidebar ul").css({
+            "display": "none",
+        });
+
+        $(".main .sidebar").animate({
+            "flex-direction": "column",
+            "height": "15vh",
+        }, 700);
+
+        $(".sidebar img").animate({
+            "margin-right": "66vw",
+        }, 800);
+
+        $(".burger-mnu").css({
+            "display": "flex",
+        });
+
+        $(".burger-mnu").animate({
+            "right": "5vw"
+        });
+
     });
 
-    $(".main .sidebar").css({
-        "flex-direction": "column",
-        "height": "15vh",
-    });
+}
 
-    $(".sidebar img").css({
-        "margin-right": "66vw",
-    });
-
-    $("#burgerMnu").css({
-        "display": "flex",
-        "right": "5vw"
-    });
-});
 
 
 $("#creativeSkillsButton").click(function () {
@@ -177,49 +212,5 @@ $("#hobbiesBtn").click(function () {
     });
 });
 
-// burger menu
 
-$("#closeBurger").click(function () {
-    $(".sidebar ul").css({
-        "display": "none",
-    });
-
-    $(".main .sidebar").animate({
-        "flex-direction": "column",
-        "height": "15vh",
-    }, 500);
-
-    $(".sidebar img").animate({
-        "margin-right": "66vw",
-    }, 800);
-
-    $(".burger-mnu").css({
-        "display": "flex",
-    });
-
-    $(".burger-mnu").animate({
-        "right": "5vw"
-    });
-
-});
-
-$("#burgerMnu").click(function () {
-    $(".sidebar ul").css({
-        "display": "flex",
-    });
-
-    $(".main .sidebar").animate({
-        "flex-direction": "column",
-        "height": "100vh",
-    }, 500);
-
-    $(".sidebar img").animate({
-        "margin-right": "66vw",
-    }, 800);
-
-    $("#burgerMnu").animate({
-        "right": "-15vw"
-    }, 500)
-
-});
 

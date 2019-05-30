@@ -392,3 +392,14 @@ span.list {
     width: 90px;
     background-color: black;
 }
+
+.example {
+    display: flex;
+    flex-direction: column;
+}
+
+.example img {
+    width: 400px;
+    height: 500px;
+    margin: 10px 0 10px 0;
+}

@@ -139,6 +139,10 @@
     .contact-icon {
         margin-right: 50px;
     }
+    .sidebar ul li:last-child img {
+        width: 50vw;
+        height: 8vh;
+    }
 }
 
 @media only screen and (max-width: 992px) {

@@ -101,6 +101,7 @@ for (let i = 0; i < 30; i++) { // меньше 30 ибо впадлу счита
                 $(".sidebar ul").append("<li><a href='./skills.html' style='opacity: 0'>skills</a></li>");
                 $(".sidebar ul").append("<li><a href='./about.html' style='opacity: 0'>about</a></li>");
                 $(".sidebar ul").append("<li><a href='./contacts.html' style='opacity: 0'>contacts</a></li>");
+                $(".sidebar ul").append('<li><a href="https://freelancehunt.com/freelancer/uta_manufacture.html?r=zjQYk" target="_blank" title="Фриланс просто"><img src="https://freelancehunt.com/static/images/buttons/106.gif" alt="Удаленная работа и фриланс" width="80" height="15"></a></li>');
 
                 $(".sidebar ul li a").animate({
                     opacity: 1,

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='freelancehunt' content='cf895a907bac4e9' />
+    <title>Uta.Manufacture</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="sidebar">
+            <div id="burgerMnu" class="burger-mnu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img src="./img/header/logo.svg" alt="uta manufacture" class="logo">
+            <ul>
+                <li><a href='./home.html'>home</a></li>
+                <li><a class="active" href='./works.html'>works</a></li>
+                <li><a href='./skills.html'>skills</a></li>
+                <li><a href='./about.html'>about</a></li>
+                <li><a href='./contacts.html'>contacts</a></li>
+                <li id="closeBurger" class="closeBurger"><span></span><span></span></li>
+                <li><a href="https://freelancehunt.com/freelancer/uta_manufacture.html?r=zjQYk" target="_blank" title="Фриланс просто"><img src="https://freelancehunt.com/static/images/buttons/106.gif" alt="Удаленная работа и фриланс" width="80" height="15"></a></li> 
+            </ul>
+        </div>
+        <div class="mainbar">
+            <img src="./img/header/clay.jpg" alt="">
+        </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/scrollHor.js"></script>
+    <script>
+        $(function () {
+            $(".scroll").mousewheel(function (event, delta) {
+                this.scrollLeft -= (delta * 50);
+                event.preventDefault();
+            });
+        });
+    </script>
+    <script src="./js/scrollPicturesEvents.js"></script>
+    <script src="./js/aboutNavs.js"></script>
+</body>
+
+</html>

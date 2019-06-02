@@ -403,3 +403,8 @@ span.list {
     height: 500px;
     margin: 10px 0 10px 0;
 }
+
+.example1 {
+    width: 80%;
+    height: 100vh;
+}
